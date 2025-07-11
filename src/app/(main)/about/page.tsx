@@ -16,19 +16,27 @@ import { BorderBeam } from '@/components/magicui/border-beam';
 export default function About() {
   return (
     <div>
-      <div className='flex flex-col lg:flex-row gap-8 mt-6'>
+      <div>
+        <p className='text-2xl lg:text-4xl font-bold'>About Me</p>
+    <p className='text-lg text-muted-foreground max-w-2xl '>
+          A brief overview of my life and professional experience as a programmer
+        </p>
+      </div>
+      <div className='flex flex-col lg:flex-row gap-8 mt-10'>
         {/* Profile Sidebar */}
+
         <div className="lg:w-1/4 flex flex-col items-center">
-          <div className="relative h-74 w-74 rounded-lg border bg-background shadow-sm sticky top-24 transition-all duration-300">
+          <div className="relative w-53 h-53 lg:h-70 lg:w-70 rounded-lg border bg-background shadow-sm sticky top-24 transition-all duration-300">
             <Image
               src={roisPoto}
               alt="Muhammad Rois"
               fill
-              className="object-cover rounded-lg transition duration-300 hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 256px"
+              className="object-cover rounded-lg transition duration-300 hover:scale-105 "
               priority
             />
-            <BorderBeam size={250} duration={12} delay={9} />
+            <div>
+              <BorderBeam className='hidden ' size={250} duration={12} delay={9} />
+            </div>
           </div>
 
           <div className="mt-4 text-center sticky top-[400px]">
@@ -45,9 +53,7 @@ export default function About() {
 
         {/* Main Content */}
         <div className='lg:w-3/4 space-y-8'>
-          <div>
-            <p className='text-4xl font-bold'>About Me</p>
-          </div>
+
           <section className='prose prose-lg dark:prose-invert max-w-none space-y-3'>
             <p>Halo! Terima kasih sudah mengunjungi halaman saya.</p>
 
