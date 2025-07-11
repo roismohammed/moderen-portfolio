@@ -1,3 +1,4 @@
+import Company from "../../public/img/rsu.png";  
 export interface Project {
   id: string;
   title: string;
@@ -9,7 +10,6 @@ export interface Project {
   liveUrl?: string;
   featured: boolean;
 }
-
 export const projects: Project[] = [
   {
     id: "company-profile-cms",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     type: "Web Application",
     description: "A custom content management system for company profile websites with drag-and-drop page builder and SEO tools.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
-    image: "rsu.png",
+    image: Company.src,
     githubUrl: "https://github.com/yourusername/company-profile-cms",
     featured: true
   },

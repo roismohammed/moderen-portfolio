@@ -90,7 +90,7 @@ export default function Header01() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-1">
               <Rocket size={32} strokeWidth={2.7} className="text-primary" />
-              <span className="text-xl font-bold">StarterBlocks</span>
+              <span className="text-xl font-bold">RoisDev</span>
             </Link>
 
             <div className="flex items-center gap-2">
@@ -105,12 +105,12 @@ export default function Header01() {
                   <SheetHeader>
                     <SheetTitle>
                       <Link href="/" className="flex items-center gap-1">
-                        <Rocket size={32} strokeWidth={2.7} className="text-primary" />
-                        <span className="text-xl font-bold">StarterBlocks</span>
+                         <Image src={logo} alt="RoisDev" width={32} height={32}/>
+                        <span className="text-xl font-bold">Roisdev</span>
                       </Link>
                     </SheetTitle>
                   </SheetHeader>
-                  <div className="my-4 flex flex-col gap-0">
+                  <div className="my-4 flex flex-col gap-0 px-4">
                     {TopMenu.map((menu, idx) => (
                       <Link
                         key={idx}
@@ -122,7 +122,7 @@ export default function Header01() {
                     ))}
                   </div>
                   <div className="border-t pt-4">
-                    <div className="mt-2 flex flex-col gap-2">
+                    <div className="mt-2 flex flex-col gap-2 px-4">
                       <Link
                         href="/login"
                         className={buttonVariants({ variant: "default" })}
